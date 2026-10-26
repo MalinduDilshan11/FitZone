@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>FitZone | Fitness</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="js/contact.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Get in Touch with FitZone Fitness!</h2>
+            <p>Have questions or need assistance? Our team is here to help! Whether you're looking for more info on our
+                services or need guidance with your fitness goals, don’t hesitate to get in touch.
+                Call, email, or visit us – we’re excited to support you on your fitness journey!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="ri-map-pin-2-fill"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>B29 Main Street<br> Kurunegala, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="ri-phone-fill"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+94 711208448</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="ri-mail-fill"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@fitzone.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form id="contactForm" method="POST">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="filename" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="comment" required="required"></textarea>
+                        <span>Write Something.....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                    <div id="successMessage" style="display:none; color: rgb(171, 11, 193); margin-top: 10px;"></div>
+                    <!-- Success Message -->
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

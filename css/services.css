@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #d12655;
+  --primary-color-dark: rgb(135, 6, 12);
+  --text-dark: #0a0a0a;
+  --text-light: #737373;
+  --extra-light: #e5e5e5;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Oswald", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.section__description {
+  color: var(--text-light);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  color: var(--white);
+  border-radius: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn__primary {
+  background-color: var(--primary-color);
+}
+
+.btn__primary:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.btn__secondary {
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
+.btn__secondary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*font-family: "Oswald", sans-serif;*/
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: var(--text-dark);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav__bar {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.nav__header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--text-dark);
+}
+
+.nav__logo img {
+  max-width: 90px;
+}
+
+.nav__menu__btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav__links {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--text-dark);
+  transition: 0.5s;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.nav__links.open {
+  transform: translateY(0);
+}
+
+.nav__links a {
+  font-size: 1.1rem;
+  font-family: var(--header-font);
+  white-space: nowrap;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.nav__links a:hover {
+  color: var(--primary-color);
+}
+
+/* General styles for the services section */
+.services {
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.heading {
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.sevices-content {
+  display: grid;
+  /* Use grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  /* Responsive grid */
+  gap: 2rem;
+  margin-top: 1rem;
+  /* Space between items */
+  padding: 2rem;
+  /* Padding around the grid */
+}
+
+.row {
+  background-color: var(--white);
+  /* Background color for each service */
+  border-radius: 27px;
+  border: 1px solid transparent;
+  /* Rounded corners */
+  padding: 20px;
+  /* Padding inside each service block */
+  box-shadow: 0 0 5px #383637;
+  transition: all 0.5s ease;
+  /* Subtle shadow */
+}
+
+.row img {
+  width: 100%;
+  /* Make images responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 27px;
+  margin-bottom: 1.4rem;
+  /* Round image corners */
+}
+
+.row h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  border-radius: 27px;
+  margin-bottom: 10px;
+  /* Margin above the heading */
+  color: var(--text-dark);
+  /* Text color */
+  font-family: var(--header-font);
+  /* Font for the heading */
+}
+
+.row:hover {
+  border: 1px solid black;
+  transform: translateY(-5px) scale(1.04);
+  cursor: pointer;
+}
+
+/* Add any other necessary styles for your header and footer below, if needed */
+
+
+
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 1.5rem 1rem;
+  }
+
+  .nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__logo img {
+    max-width: 120px;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    transform: none;
+    z-index: 1;
+  }
+}
+
+.header__container {
+  padding-block: 12rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header__content {
+  grid-column: 3/4;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--text-dark);
+  padding: 1rem;
+  list-style: none;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.nav__links li {
+  position: relative;
+  /* To position the dropdown correctly */
+}
+
+.nav__links li:hover .dropdown {
+  display: block;
+  /* Show dropdown on hover */
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  display: block;
+  /* Full-width links */
+  font-family: var(--header-font);
+  font-size: 1.1rem;
+}
+
+
+.dropdown a:hover {
+  color: var(--primary-color);
+}
+
+
+.footer {
+  background-color: var(--text-dark);
+}
+
+.footer__container {
+  display: flex;
+  /* Flex for row layout */
+  justify-content: space-between;
+  /* Space out items */
+  align-items: center;
+  /* Center vertically */
+  padding: 1rem;
+  /* Add padding */
+}
+
+.footer__logo img {
+  margin-bottom: 1rem;
+  max-width: 200px;
+}
+
+.footer__col {
+  flex: 1;
+  /* Allow equal spacing */
+  text-align: center;
+  /* Center text in each column */
+}
+
+/* Adjusting margin for the footer columns */
+.footer__col.logo {
+  margin-right: 2rem;
+  /* Space between logo and contact */
+}
+
+.footer__col.contact {
+  margin-right: 2rem;
+  /* Space between contact links and socials */
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+}
+
+.footer__links li {
+  margin: 0.5rem 0;
+  /* Space between items */
+}
+
+.footer__links a {
+  color: var(--text-light);
+  transition: color 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.footer__links a:hover {
+  color: var(--white);
+  /* Color on hover */
+  text-decoration: none;
+  /* Optional: Add underline on hover for emphasis */
+}
+
+.footer__links a span {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__socials a {
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: 100%;
+}
+
+.footer__socials a:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    /* Stack columns on smaller screens */
+    align-items: flex-start;
+    /* Align to left */
+  }
+
+  .footer__col {
+    text-align: left;
+    /* Left align text for smaller screens */
+    margin-bottom: 1rem;
+    /* Space between rows */
+  }
+
+  .footer__socials {
+    margin-top: 1rem;
+    /* Space above social icons */
+  }
+}

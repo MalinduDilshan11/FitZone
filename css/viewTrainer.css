@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../images/viewtrainer.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.trainer-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.trainer-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.trainer-card:hover {
+    transform: scale(1.05);
+}
+
+.trainer-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #eb174f;
+}
+
+.trainer-card p {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #eb174f;
+    /* or any color that fits your theme */
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(255, 247, 249, 0.1);
+}

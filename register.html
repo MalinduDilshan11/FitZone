@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/register.css" />
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Registration</h1>
+    <form id="register-form">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter Username" />
+          <span class="error-message" id="username-error"></span>
+        </div>
+        <div class="user-input-box">
+          <label for="nic">NIC</label>
+          <input type="text" id="nic" name="nic" placeholder="Enter NIC Number" />
+          <span class="error-message" id="nic-error"></span>
+        </div>
+        <div class="user-input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" />
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+          <span class="error-message" id="phoneNumber-error"></span>
+        </div>
+        <div class="user-input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" />
+          <span class="error-message" id="password-error"></span>
+        </div>
+        <div class="user-input-box">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+          <span class="error-message" id="confirmPassword-error"></span>
+        </div>
+      </div>
+      <div class="gender-details-box">
+        <span class="gender-title">Gender</span>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="Other">
+          <label for="other">Other</label>
+          <span class="error-message" id="gender-error"></span>
+        </div>
+      </div>
+      <div class="form-submit-btn">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+    <div class="success-message" id="success-message"></div> <!-- Success message container -->
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+
+</html>

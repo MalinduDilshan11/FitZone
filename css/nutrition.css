@@ -1,0 +1,180 @@
+body {
+    /*font-family: 'Arial', sans-serif;*/
+    margin: 0;
+    padding: 0;
+    background: url(../images/meal4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    background: linear-gradient(rgba(168, 20, 42, 0.85), rgba(50, 0, 0, 0.7));
+    /* Gradient overlay */
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.5s ease;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    /* Stronger shadow for readability */
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    /* Subtle shadow for subheading */
+}
+
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.meal-plan-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meal-plan-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.meal-plan {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.meal-plan:hover {
+    transform: scale(1.02);
+}
+
+.meal-plan h3 {
+    color: rgba(168, 20, 42, 0.85);
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table,
+th,
+td {
+    border: none;
+    /* Removed default borders */
+}
+
+th,
+td {
+    padding: 15px;
+    /* Increased padding for better spacing */
+    text-align: left;
+    /* Align text to the left for better readability */
+    vertical-align: middle;
+    /* Center align vertically for better appearance */
+    transition: background 0.3s;
+    /* Smooth background transition */
+}
+
+th {
+    background-color: #f9f9f9;
+    /* Light gray background for header */
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000000;
+    /* Dark text for better contrast */
+    font-weight: bold;
+    /* Make header text bold */
+    border-bottom: 2px solid #d12655;
+    /* Underline the header */
+}
+
+td {
+    background-color: #ffffff;
+    /* White background for table rows */
+    border-bottom: 1px solid #ddd;
+    /* Subtle border for rows */
+}
+
+/* Alternate row colors */
+tr:nth-child(even) td {
+    background-color: #000000;
+    color: #f2f2f2;
+    /* Light gray for even rows */
+}
+
+td:hover {
+    background-color: rgba(168, 20, 42, 0.85);
+    color: #f2f2f2;
+    /* Slight hover effect for rows */
+}
+
+td:first-child {
+    font-weight: bold;
+    /* Bold the meal names for emphasis */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    .meal-plan h3 {
+        font-size: 1.5em;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        /* Reduced padding for smaller screens */
+    }
+
+    th {
+        font-size: 0.9em;
+        /* Smaller header font size for mobile */
+    }
+
+    td {
+        font-size: 0.85em;
+        /* Smaller table font size for mobile */
+    }
+}

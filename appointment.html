@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/appointment.css">
+    <title>Appointment Booking</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-title">Book an Appointment</h1>
+        <form id="appointment-form" action="appointment.php" method="POST">
+            <div class="main-appointment-info">
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required />
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required />
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="appointment-date">Appointment Date</label>
+                    <input type="date" id="appointment-date" name="appointment-date" required />
+                    <span class="error-message" id="appointment-date-error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="class-type">Class Type</label>
+                    <select id="class-type" name="class-type" required>
+                        <option value="">Select a Class</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="strength training">Strength Training</option>
+                        <option value="cardio">Cardio</option>
+                    </select>
+                    <span class="error-message" id="class-type-error"></span>
+                </div>
+                <div class="form-submit-btn">
+                    <input type="submit" value="Book Appointment">
+                </div>
+                <div class="success-message" id="success-message"></div>
+                <div class="error-message" id="general-error"></div>
+            </div>
+        </form>
+    </div>
+    <script src="js/appointment.js" defer></script>
+</body>
+
+</html>

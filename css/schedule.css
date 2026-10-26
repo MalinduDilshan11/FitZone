@@ -1,0 +1,65 @@
+body {
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/schedule.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    /* Updated text color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Remove default margin */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Added transparency for better background blend */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Slightly darker shadow for depth */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    /* Increased font size for emphasis */
+    color: #eb174f;
+    /* Primary color for the heading */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* Added margin to the table */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    /* Increased font size for better readability */
+}
+
+th {
+    background-color: #eb174f;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.8);
+    /* Slightly transparent for modern look */
+}
+
+tbody tr:hover {
+    background-color: rgba(221, 221, 221, 0.8);
+    /* Slightly transparent on hover */
+}
